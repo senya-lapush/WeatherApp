@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="30dp"
+    tools:context=".presentation.activities.CurrentWeatherActivity">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="City Name"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/gl_weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_city">
+
+        <androidx.cardview.widget.CardView
+            style="@style/WeatherInfoCard"
+            android:background="@drawable/weather_border">
+
+            <LinearLayout style="@style/CardLayout">
+
+                <TextView
+                    style="@style/WeatherInfoTitle"
+                    android:text="@string/temperature" />
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    style="@style/WeatherInfo"
+                    android:text="0°C" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/WeatherInfoCard">
+
+            <LinearLayout style="@style/CardLayout">
+
+                <TextView
+                    style="@style/WeatherInfoTitle"
+                    android:text="@string/humidity" />
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    style="@style/WeatherInfo"
+                    android:text="0%" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/WeatherInfoCard">
+
+            <LinearLayout style="@style/CardLayout">
+
+                <TextView
+                    style="@style/WeatherInfoTitle"
+                    android:text="@string/wind" />
+
+                <TextView
+                    android:id="@+id/tv_wind"
+                    style="@style/WeatherInfo"
+                    android:text="0 m/s" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/WeatherInfoCard">
+
+            <LinearLayout style="@style/CardLayout">
+
+                <TextView
+                    style="@style/WeatherInfoTitle"
+                    android:text="@string/pressure" />
+
+                <TextView
+                    android:id="@+id/tv_pressure"
+                    style="@style/WeatherInfo"
+                    android:text="0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_weather_details"
+        style="@style/NavButton"
+        android:layout_marginTop="8dp"
+        android:text="@string/weather_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_weather_info" />
+
+    <Button
+        android:id="@+id/btn_forecast"
+        style="@style/NavButton"
+        android:layout_marginTop="8dp"
+        android:text="@string/forecast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_weather_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

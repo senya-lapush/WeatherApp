@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="50dp"
+    android:gravity="center_horizontal"
+    tools:context=".presentation.fragments.WeatherDetailsFragment">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Saint Petersburg"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_weather_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_city">
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard"
+                android:background="@drawable/weather_border">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/feels_like" />
+                    <TextView
+                        android:id="@+id/tv_feels_like"
+                        style="@style/WeatherInfo"
+                        android:text="0°C" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/temperature_min" />
+                    <TextView
+                        android:id="@+id/tv_temp_min"
+                        style="@style/WeatherInfo"
+                        android:text="0°C" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/temperature_max" />
+                    <TextView
+                        android:id="@+id/tv_temp_max"
+                        style="@style/WeatherInfo"
+                        android:text="0°C" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/visibility" />
+                    <TextView
+                        android:id="@+id/tv_visibility"
+                        style="@style/WeatherInfo"
+                        android:text="0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/sunrise" />
+                    <TextView
+                        android:id="@+id/tv_sunrise"
+                        style="@style/WeatherInfo"
+                        android:text="0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/sunset" />
+                    <TextView
+                        android:id="@+id/tv_sunset"
+                        style="@style/WeatherInfo"
+                        android:text="0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/clouds" />
+                    <TextView
+                        android:id="@+id/tv_clouds"
+                        style="@style/WeatherInfo"
+                        android:text="0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/WeatherInfoCard">
+                <LinearLayout style="@style/CardLayout">
+                    <TextView
+                        style="@style/WeatherInfoTitle"
+                        android:text="@string/wind_direction" />
+                    <TextView
+                        android:id="@+id/tv_wind_direction"
+                        style="@style/WeatherInfo"
+                        android:text="0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

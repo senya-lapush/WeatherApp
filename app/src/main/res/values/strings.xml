@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="weather_details">Details</string>
+    <string name="forecast">Forecast</string>
+    <string name="temperature">temperature</string>
+    <string name="humidity">humidity</string>
+    <string name="wind">wind</string>
+    <string name="pressure">pressure</string>
+    <string name="feels_like">feels like:</string>
+    <string name="temperature_min">temperature (min):</string>
+    <string name="temperature_max">temperature(max):</string>
+    <string name="visibility">visibility:</string>
+    <string name="sunrise">sunrise:</string>
+    <string name="sunset">sunset:</string>
+    <string name="clouds">clouds:</string>
+    <string name="wind_direction">wind direction:</string>
+    <string name="degrees">%d°C</string>
+    <string name="mmHG">%d mmHG</string>
+    <string name="m_in_sec">%d m/s</string>
+    <string name="percent">%d%%</string>
+    <string name="kilometres">%d%% km</string>
+</resources>
