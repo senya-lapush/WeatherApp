@@ -23,13 +23,13 @@ Project is created with:
 
 ## Screenshots
 * Current Weather
-  
-<img src="https://github.com/senya-lapush/study_planner/assets/99476262/fbec7b02-acfd-42d7-a939-1e9dff419a7c" alt="Current_Weather" width="200"/> 
+
+<img src="https://github.com/senya-lapush/WeatherApp/assets/99476262/081c565a-a00b-4c59-90a2-4ab75349ab05" alt="Current_Weather" width="200"/> 
 
 * Weather Details
-
-<img src="https://github.com/senya-lapush/study_planner/assets/99476262/d10d9ccf-42b4-4e53-9fcb-fba7254253b5" alt="Weather_Details" width="200"/> 
+  
+<img src="https://github.com/senya-lapush/WeatherApp/assets/99476262/fbbcd1c3-6524-4c04-a207-f29571af384e" alt="Weather_Details" width="200"/> 
 
 * Forecast
 
-<img src="https://github.com/senya-lapush/study_planner/assets/99476262/8c93f0e7-5a6f-4dd2-9761-4e2d281880cb" alt="Forecast" width="200"/> 
+<img src="https://github.com/senya-lapush/WeatherApp/assets/99476262/5d971850-e3b7-4e5b-a425-f9b2e6fd1338" alt="Forecast" width="200"/> 
